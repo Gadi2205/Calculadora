@@ -1,0 +1,85 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title > Probando la conexion </title>
+
+
+	<script src ="https://code.jquery.com/jquery-3.5.1.js"> </script>
+	<link rel ="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<h1> Pagina espanta viejas vol. 2 </h1>
+	<h2>Calculadora v.1</h2>
+	<script type="text/javascript">
+		function sumardatos(){
+            var d1=parseInt(document.getElemetById('dato1').value); //parseInt convierte el
+            var d2=parseInt(document.getElemetById('dato2').value);
+		    document.registro.resultado.value=d1+d2; 
+		}
+
+		function restardatos(){
+            var d1=parseInt(document.getElemetById('dato1').value); //parseInt convierte el
+            var d2=parseInt(document.getElemetById('dato2').value);
+		    document.registro.resultado.value=d1-d2; 
+		}
+
+		function multiplicardatos(){
+            var d1=parseInt(document.getElemetById('dato1').value); //parseInt convierte el
+            var d2=parseInt(document.getElemetById('dato2').value);
+		    document.registro.resultado.value=d1*d2; 
+		}
+
+		function dividirdatos(){
+            var d1=parseInt(document.getElemetById('dato1').value); //parseInt convierte el
+            var d2=parseInt(document.getElemetById('dato2').value);
+		    document.registro.resultado.value=d1/d2; 
+		}
+
+	</script>
+	<form name="registro">
+<table>
+<tr><td>Dato 1</td><td><input type="text" name="dato1" id="dato1"></td></tr>
+<tr><td>Dato 2</td><td><input type="text" name="dato2" id="dato2"></td></tr>	
+<tr>
+
+<td>
+	<input type="button" name="Enviar" value="+" onclick="sumardatos()">
+	    <input type="button" name="Enviar" value="-" onclick="restardatos()">
+	    <input type="button" name="Enviar" value="*" onclick="multiplicardatos()">
+	    <input type="button" name="Enviar" value="/" onclick="dividirdatos()">
+</td>
+
+</tr>
+</table>
+<table>
+	<td>Resultado:</td>
+	<td><input type="text" name="resultado" id="resultado"></td>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
